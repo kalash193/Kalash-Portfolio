@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <Script>
+  const response = await fetch('http://192.168.31.81:3000/chat', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message })
+});
+</Script>
   <!-- Navigation -->
   <nav class="nav">
     <div class="container">
@@ -267,4 +274,5 @@
       <!--<div class="social-links">
         <a href="#" class="social-link">in</a>
         <a href="#" class="social-link">gh</a>
+
         <a href="#" class="social-link">tw</a>-->
